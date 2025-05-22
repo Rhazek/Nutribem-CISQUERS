@@ -46,7 +46,6 @@ Após rodar o comando `npx expo start`, será exibido um menu no terminal com v�
 - Para abrir a versão **web** do app no navegador, pressione a tecla **`w`**.
 - Para uma melhor experiência na web, recomendamos usar a extensão do navegador chamada **Simulador móvel** (mobile simulator), que permite simular telas de dispositivos móveis com diferentes resoluções e interações táteis.
 
-Você também pode executar o app diretamente em dispositivos físicos ou emuladores Android/iOS usando as opções do Expo.
 
 ---
 
