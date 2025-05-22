@@ -1,50 +1,58 @@
-# Welcome to your Expo app 👋
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+# NutriBem - Aplicativo Expo
 
-## Get started
+Este é o repositório do **NutriBem**, um aplicativo mobile desenvolvido com Expo para ajudar no agendamento de consultas nutricionais.
 
-1. Install dependencies
+---
 
-   ```bash
-   npm install
-   ```
+## Pré-requisitos
 
-2. Start the app
+- Node.js instalado
+- npm (vem junto com Node.js)
+- Expo CLI (recomendo rodar via `npx expo`)
 
-   ```bash
-   npx expo start
-   ```
+---
 
-In the output, you'll find options to open the app in a
+## Como rodar o projeto
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+Este projeto possui duas partes que precisam ser executadas separadamente: o **backend** e o **frontend**.
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+### 1. Backend
 
-## Get a fresh project
-
-When you're ready, run:
+O backend é responsável pela API e deve ser iniciado antes do frontend para que o app funcione corretamente.
 
 ```bash
-npm run reset-project
+cd backend
+npm install
+npm start
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+Este comando irá instalar as dependências e iniciar o servidor backend.
 
-## Learn more
+---
 
-To learn more about developing your project with Expo, look at the following resources:
+### 2. Frontend (app mobile)
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+O frontend é o aplicativo Expo que será executado emulando o app móvel.
 
-## Join the community
+```bash
+cd nutribem-frontend
+npm install
+npx expo start
+```
 
-Join our community of developers creating universal apps.
+Após rodar o comando `npx expo start`, será exibido um menu no terminal com várias opções.
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+- Para abrir a versão **web** do app no navegador, pressione a tecla **`w`**.
+- Para uma melhor experiência na web, recomendamos usar a extensão do navegador chamada **Simulador móvel** (mobile simulator), que permite simular telas de dispositivos móveis com diferentes resoluções e interações táteis.
+
+Você também pode executar o app diretamente em dispositivos físicos ou emuladores Android/iOS usando as opções do Expo.
+
+---
+
+## Estrutura do projeto
+
+- `backend/` - Código do servidor API, banco de dados e lógica do backend
+- `nutribem-frontend/` - Código do aplicativo móvel em React Native com Expo
+
+
